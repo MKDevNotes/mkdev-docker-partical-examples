@@ -2,6 +2,8 @@
 # FROM alpine
 FROM node:14-alpine
 
+WORKDIR /usr/app
+
 #install some depenendicies
 COPY ./ ./
 RUN npm install
